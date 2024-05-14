@@ -58,7 +58,7 @@ Explore the effectiveness and interaction tracking of LangSmith in PharmAssistAI
 
 ![Feedback Example](https://i.imgur.com/xhxelcx.png)
 
-**Interaction Metrics Dashboard**:
+**Interaction Metrics Dashboard**
 
 ![Metrics Dashboard](https://i.imgur.com/H9Q8OKj.png)
 
