@@ -23,6 +23,37 @@ PharmAssistAI revolutionizes how pharmacy professionals and students approach le
 4. **Summary Generation**: Summaries of the data are created using GenAI technologies.
 5. **Question Suggestion**: Suggest related questions to encourage further exploration.
 
+## Hugging Face App Demo
+
+
+Experience our app [live](https://huggingface.co/spaces/rajkstats/PharmAssistAI) on Hugging Face:
+
+**Home Screen** 
+
+![Home Screen](https://i.imgur.com/SCasi55.png)
+
+**Demo Screen** 
+
+![Demo Screen](https://i.imgur.com/5GUOYHk.png)
+
+## LangSmith Performance Insights
+
+Explore the effectiveness and interaction tracking of LangSmith in PharmAssistAI through these detailed screenshots:
+
+**Overview of Real-Time Evaluations** 
+
+![Real-Time Evaluations](https://i.imgur.com/H7wkAnl.png)
+
+**Detailed Feedback Example** 
+
+![Feedback Example](https://i.imgur.com/xhxelcx.png)
+
+**Interaction Metrics Dashboard**
+
+![Metrics Dashboard](https://i.imgur.com/H9Q8OKj.png)
+
+
+
 ## Development Roadmap
 
 - Integrate and index the complete FDA Drug Labeling and Adverse Events datasets.
