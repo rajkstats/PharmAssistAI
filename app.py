@@ -45,6 +45,7 @@ from langchain_openai import OpenAI, OpenAIEmbeddings
 from langchain_community.document_loaders import DataFrameLoader
 from langchain_community.vectorstores import Qdrant
 from qdrant_client import QdrantClient
+from qdrant_client import AsyncQdrantClient
 
 # Custom evaluations
 from custom_eval import PharmAssistEvaluator, HarmfulnessEvaluator, AIDetectionEvaluator
@@ -278,9 +279,9 @@ async def on_chat_start():
         QDRANT_API_KEY=os.environ.get("QDRANT_API_KEY")
         QDRANT_CLUSTER_URL =os.environ.get("QDRANT_CLUSTER_URL")
         
-        qdrant_client = QdrantClient(url=QDRANT_CLUSTER_URL, api_key=QDRANT_API_KEY,timeout=60)
+        qdrant_client = AsyncQdrantClient(url=QDRANT_CLUSTER_URL, api_key=QDRANT_API_KEY,timeout=60)
 
-        response = qdrant_client.get_collections()
+        response = await qdrant_client.get_collections()
 
         # Extracting the collection names from the response
         collection_names = [collection.name for collection in response.collections]
