@@ -151,7 +151,11 @@ async def generate_answer(query):
     """
     Generate an answer to the user's query using a conversational retrieval chain and handle callbacks for related questions and papers.
     """
+    
+    # Initialize a message history to track the conversation
     message_history = ChatMessageHistory()
+
+    # Set up memory to hold the conversation context and return answers
     memory = ConversationBufferMemory(
         memory_key="chat_history",
         output_key="answer",
@@ -159,6 +163,7 @@ async def generate_answer(query):
         return_messages=True,
     )
 
+    # Create a retrieval chain combining the LLM and the retriever
     chain = ConversationalRetrievalChain.from_llm(
         ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0, streaming=True),
         chain_type="stuff",
@@ -168,9 +173,11 @@ async def generate_answer(query):
     )
 
     try:
+        # Define callback handler for asynchronous operations
         cb = cl.AsyncLangchainCallbackHandler()
-        #evaluator = PharmAssistEvaluator()
         feedback_callback = EvaluatorCallbackHandler(evaluators=[PharmAssistEvaluator(),HarmfulnessEvaluator(),AIDetectionEvaluator()])
+        
+        # Process the incoming message using the conversational chain
         res = await chain.acall(query, callbacks=[cb,feedback_callback])
         answer = res["answer"]
         source_documents = res["source_documents"]
@@ -217,6 +224,7 @@ async def on_related_question_selected(action: cl.Action):
     await cl.Message(content=question, author="User").send()
 
     answer, text_elements, related_question_actions, related_papers, query = await generate_answer(question)
+    # Send the processed answer back to the user
     await cl.Message(content=answer, elements=text_elements, author="PharmAssistAI").send()
 
     # Send related questions as a separate message
