@@ -341,7 +341,7 @@ async def on_chat_start():
                     metadata[field] = value
                 doc.metadata = metadata  # Update the metadata to only include specified fields
     
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
+            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
             split_drug_docs = text_splitter.split_documents(drug_docs)
 
             # Asynchronously create a Qdrant vector store with the document chunks
