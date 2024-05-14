@@ -1,0 +1,17 @@
+biopython==1.83
+chainlit==0.7.700
+langchain==0.1.16
+langchain-community==0.0.34
+langchain-core==0.1.46
+langchain-openai==0.1.4
+langchain-pinecone==0.1.0
+langchain-text-splitters==0.0.1
+langsmith==0.1.52
+openai==1.25.0
+pandas==2.2.2
+pinecone-client==3.2.2
+python-dotenv==1.0.0
+PyMuPDF==1.24.2
+PyMuPDFb==1.24.1
+qdrant-client==1.9.1
+tiktoken==0.6.0

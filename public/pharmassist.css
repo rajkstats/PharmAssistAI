@@ -1,0 +1,23 @@
+.MuiStack-root.watermark {
+    visibility: hidden !important;
+}
+
+.MuiStack-root.watermark::before {
+    content: "PharmAssistAI is not a substitute for professional medical advice. Always seek guidance from a qualified healthcare provider.";
+    font-size: x-small;
+    color: gray;
+    visibility: visible !important;
+    /* Other CSS styles for the pseudo-element */
+  }
+/* Hide the Chainlit logo */
+.cl-header-logo {
+    display: none;
+  }
+  
+  /* Add custom text for "PharmAssist" */
+  .cl-header::before {
+    content: "PharmAssist";
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
