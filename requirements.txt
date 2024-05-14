@@ -1,5 +1,5 @@
 biopython==1.83
-chainlit==0.7.700
+chainlit==1.1.0
 langchain==0.1.16
 langchain-community==0.0.34
 langchain-core==0.1.46
