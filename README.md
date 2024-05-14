@@ -1,6 +1,9 @@
 ---
 title: PharmAssistAI
 image: pharmassist.jpg
+emoji: 😻
+colorFrom: green
+colorTo: yellow
 sdk: docker
 pinned: false
 license: openrail
