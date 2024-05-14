@@ -366,16 +366,12 @@ async def on_chat_start():
             "Explain in simple terms how Metformin works?"
         ]
         
-        # await cl.Message(
-        #     content="**Welcome to PharmAssistAI ! Here are some potential questions you can ask:**",
-        #     actions=[cl.Action(name="ask_question", value=question, label=question) for question in potential_questions]  
-        # ).send()
-
-                
-        cl.Message(
+        await cl.Message(
             content="**Welcome to PharmAssistAI ! Here are some potential questions you can ask:**",
             actions=[cl.Action(name="ask_question", value=question, label=question) for question in potential_questions]  
         ).send()
+
+                
 
 # Main function to handle user messages
 @cl.on_message
