@@ -249,6 +249,21 @@ async def on_question_selected(action: cl.Action):
         related_papers_content = "**Related Papers from PubMed:**\n" + "\n".join(f"- {paper}" for paper in related_papers)
         await cl.Message(content=related_papers_content, author="").send()
 
+   
+potential_questions = [
+    "What should I be careful of when taking Metformin?",
+    "What are the contraindications of Aspirin?", 
+    "Are there low-cost alternatives to branded Aspirin available over-the-counter?",
+    "What precautions should I take if I'm pregnant or nursing while on Lipitor?",
+    "Should Lipitor be taken at a specific time of day, and does it need to be taken with food?",
+    "What is the recommended dose of Aspirin?",
+    "Can older people take beta blockers?",
+    "How do beta blockers work?",
+    "Can beta blockers be used for anxiety?",
+    "I am taking Aspirin, is it ok to take Glipizide?",
+    "Explain in simple terms how Metformin works?"
+]
+
 # Callback for chat start event
 @cl.on_chat_start
 async def on_chat_start():
@@ -352,20 +367,7 @@ async def on_chat_start():
                 api_key=QDRANT_API_KEY,
                 collection_name="fda_drugs"  # Name of the collection in Qdrant
             )
-   
-        potential_questions = [
-            "What should I be careful of when taking Metformin?",
-            "What are the contraindications of Aspirin?", 
-            "Are there low-cost alternatives to branded Aspirin available over-the-counter?",
-            "What precautions should I take if I'm pregnant or nursing while on Lipitor?",
-            "Should Lipitor be taken at a specific time of day, and does it need to be taken with food?",
-            "What is the recommended dose of Aspirin?",
-            "Can older people take beta blockers?",
-            "How do beta blockers work?",
-            "Can beta blockers be used for anxiety?",
-            "I am taking Aspirin, is it ok to take Glipizide?",
-            "Explain in simple terms how Metformin works?"
-        ]
+
         
         await cl.Message(
             content="**Welcome to PharmAssistAI ! Here are some potential questions you can ask:**",
