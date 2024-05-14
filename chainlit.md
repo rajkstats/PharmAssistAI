@@ -53,7 +53,6 @@ Explore the effectiveness and interaction tracking of LangSmith in PharmAssistAI
 ![Metrics Dashboard](https://i.imgur.com/H9Q8OKj.png)
 
 
-
 ## Development Roadmap
 
 - Integrate and index the complete FDA Drug Labeling and Adverse Events datasets.
