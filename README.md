@@ -41,7 +41,6 @@ PharmAssistAI revolutionizes how pharmacy professionals and students approach le
 
 ## Hugging Face App Demo
 
-
 Experience our app [live](https://huggingface.co/spaces/rajkstats/PharmAssistAI) on Hugging Face:
 
 **Home Screen** 
