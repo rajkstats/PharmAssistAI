@@ -1,13 +1,28 @@
+# Set up a Python virtual environment and activate it:
 # python3 -m venv myenv
 # source myenv/bin/activate
+
+# Run the FastAPI application with live reload for development:
 # uvicorn main:app --reload
+
+# Run the FastAPI application in the background for production:
 # nohup uvicorn main:app --host 0.0.0.0 --port 8000 &
+
+# Check which process is using a specific port (8000 in this case):
 # lsof -i :8000
+
+# Terminate a process using a specific port by its PID (e.g., PID 2540):
 # kill -9 2540
-# you can call this endpoint from Postman (or any other HTTP client) by sending a POST request to http://your_server_url/index_fda_drugs?url=https://download.open.fda.gov/drug/label/drug-label-0001-of-0012.json.zip, where the URL is passed as a query parameter.
-# Local: http://127.0.0.1:8000/index_fda_drugs?url=https://download.open.fda.gov/drug/label/drug-label-0001-of-0012.json.zip
+
+# Example of a POST request from Postman or any other HTTP client:
+# This request indexes data from a specified URL:
+# You can call this endpoint by sending a POST request to:
+# http://your_server_url/index_fda_drugs?url=https://download.open.fda.gov/drug/label/drug-label-0001-of-0012.json.zip
+# where the URL is passed as a query parameter.
+
+# Examples for testing the endpoint locally using curl:
+# Local URL testing with curl:
 # curl -X POST "http://127.0.0.1:8000/index_fda_drugs?url=https://download.open.fda.gov/drug/label/drug-label-0001-of-0012.json.zip"
-# curl --interface <network_interface> -X POST "http://0.0.0.0:8000/index_fda_drugs?url=https://download.open.fda.gov/drug/label/drug-label-0001-of-0012.json.zip"
 
 import asyncio
 import time

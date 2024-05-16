@@ -21,7 +21,7 @@ PharmAssistAI revolutionizes how pharmacy professionals and students approach le
 - **Interactive Learning**: Engage with AI-generated related questions to deepen understanding and knowledge retention.
 - **Research Linkage**: Automatically fetch and link relevant academic papers from PubMed, enhancing the depth of available information and supporting academic research.
 
-## Advanced Capabilities
+## Monitoring and Evaluation
 
 - **Real-Time Feedback with LangSmith**: Use LangSmith to incorporate real-time feedback and custom evaluations. This system ensures that the AI's responses are not only accurate but also contextually aware and user-focused.
 - **Custom Evaluators for Enhanced Accuracy**: Deploy custom evaluators like PharmAssistEvaluator to ensure responses meet high standards of relevance, safety, and perception as human-generated versus AI-generated.
@@ -31,8 +31,13 @@ PharmAssistAI revolutionizes how pharmacy professionals and students approach le
 1. **Query Input**: Pharmacists type in their questions directly.
 2. **Data Retrieval**: Relevant data is fetched from comprehensive datasets, including automated searches of PubMed for related academic papers.
 3. **Data Presentation**: Data is displayed in an easily digestible format.
-4. **Summary Generation**: Summaries of the data are created using GenAI technologies.
+4. **Summary Generation**: Summaries of the data are created using GenAI
 5. **Question Suggestion**: Suggest related questions to encourage further exploration.
+
+## Architecture
+
+![RAG Architecture](https://i.imgur.com/QPNipiI.png)
+
 
 ## Hugging Face App Demo
 
@@ -64,7 +69,6 @@ Explore the effectiveness and interaction tracking of LangSmith in PharmAssistAI
 ![Metrics Dashboard](https://i.imgur.com/H9Q8OKj.png)
 
 
-
 ## Development Roadmap
 
 - Integrate and index the complete FDA Drug Labeling and Adverse Events datasets.
@@ -82,5 +86,3 @@ We value your input and invite you to help us enhance PharmAssistAI:
 
 - 🐛 [Report an issue](https://github.com/rajkstats/pharmassistai/issues) on GitHub for technical issues or feature suggestions.
 - 📧 Contact us at [raj.k.stats@gmail.com](mailto:raj.k.stats@gmail.com) for direct support or inquiries.
-
-Join us in transforming pharmaceutical research and education through advanced AI technology!
