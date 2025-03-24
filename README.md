@@ -36,7 +36,7 @@ PharmAssistAI revolutionizes how pharmacy professionals and students approach le
 
 ## Architecture
 
-![RAG Architecture](https://i.imgur.com/QPNipiI.png)
+![RAG Architecture](https://github.com/user-attachments/assets/9315b49e-4f42-4f3e-b377-8627d79c8cf7)
 
 
 ## Hugging Face App Demo
@@ -45,11 +45,11 @@ Experience our app [live](https://huggingface.co/spaces/rajkstats/PharmAssistAI)
 
 **Home Screen** 
 
-![Home Screen](https://i.imgur.com/SCasi55.png)
+![Home Screen](https://github.com/user-attachments/assets/8ee2cfd9-a2fb-4dbc-884b-4b2d6b1a1323)
 
 **Demo Screen** 
 
-![Demo Screen](https://i.imgur.com/5GUOYHk.png)
+![Demo Screen](https://github.com/user-attachments/assets/50dc9154-c2e3-4d88-a401-01ce5df07f3a)
 
 ## LangSmith Performance Insights
 
@@ -57,15 +57,15 @@ Explore the effectiveness and interaction tracking of LangSmith in PharmAssistAI
 
 **Overview of Real-Time Evaluations** 
 
-![Real-Time Evaluations](https://i.imgur.com/H7wkAnl.png)
+![Real-Time Evaluations](https://github.com/user-attachments/assets/be8d94ae-2ec1-4d13-865e-daa6f767ac40)
 
 **Detailed Feedback Example** 
 
-![Feedback Example](https://i.imgur.com/xhxelcx.png)
+![Feedback Example](https://github.com/user-attachments/assets/3f7ee517-ff75-4fcc-bd59-fe7042887f39)
 
 **Interaction Metrics Dashboard**
 
-![Metrics Dashboard](https://i.imgur.com/H9Q8OKj.png)
+![Metrics Dashboard](https://github.com/user-attachments/assets/dbd0633a-46a6-489b-8a7e-5d0ab27c4671)
 
 
 ## Development Roadmap
